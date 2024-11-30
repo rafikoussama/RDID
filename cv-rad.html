@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiba Radid - CV</title>
+    <style>
+        /* Styles généraux */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+        }
+
+        /* Conteneur principal pour la mise en page en deux colonnes */
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        /* Barre latérale (20%) */
+        .sidebar {
+            width: 20%;
+            background-color: #7182b4;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* Section principale (80%) */
+        .main-content {
+            width: 80%;
+            margin-left: 20%; /* Ajouté pour laisser de la place pour la barre latérale */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Entête */
+        .header {
+            background: url('background1.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #003366; /* Bleu marine pour Hiba et Radid */
+            display: inline; /* Les deux noms sur la même ligne */
+        }
+
+        .header h2 {
+            font-size: 1.5em;
+            font-style: italic;
+            margin: 5px 0 0;
+            color: #87CEEB; /* Bleu ciel pour "Développeur Web" */
+            display: block; /* "Développeur Web" sur une nouvelle ligne */
+        }
+
+        /* Données personnelles */
+        .personal-info {
+            margin: 20px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .personal-info h3 {
+            font-size: 1.5em;
+            color: #7182b4;
+            margin-bottom: 10px;
+        }
+
+        .personal-info p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .personal-info span {
+            font-weight: bold;
+            font-family: "Times New Roman", serif;
+        }
+
+        /* Tableaux */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #7182b4;
+            text-align: left;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #7182b4;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fff; /* Remplacement de la couleur verte par du blanc */
+        }
+
+        /* Survol des lignes du tableau */
+        tr:hover {
+            background-color: #87CEEB; /* Bleu ciel au survol */
+        }
+
+        /* Formation */
+        .formation-section {
+            margin: 20px;
+        }
+
+        .formation-section h3 {
+            background-color: #abbdf2;
+            text-align: center;
+            color: #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .formation-section a {
+            text-decoration: none;
+            color: #7182b4;
+        }
+
+        .formation-section a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        /* Image de profil dans la barre latérale */
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Liens de navigation dans la barre latérale */
+        .sidebar .nav-links a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            display: block;
+        }
+
+        .sidebar .nav-links a:hover {
+            background-color: #abbdf2;
+        }
+
+        /* Icônes de réseaux sociaux */
+        .sidebar .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .sidebar .social-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar .social-icons a:hover {
+            color: #abbdf2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Conteneur principal -->
+    <div class="container">
+
+        <!-- Barre latérale -->
+        <div class="sidebar">
+            <!-- Photo de profil -->
+            <img src="img-rad.jpg" alt="Photo de profil" class="profile-image">
+
+            <!-- Liens de navigation -->
+            <div class="nav-links">
+                <a href="#experience">Expériences Professionnelles</a>
+                <a href="#formation">Formation</a>
+                <a href="#competences">Compétences</a>
+                <a href="#certificats">Certificats</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Icônes de réseaux sociaux -->
+            <div class="social-icons">
+                <!-- Exemple avec LinkedIn et un autre réseau social -->
+                <a href="https://www.linkedin.com/in/ton-profile" target="_blank">
+                    <img src="link-rad.jpg" alt="LinkedIn" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.swansocial.com/ton-profile" target="_blank">
+                    <img src="git-rad.jpg" alt="Swan" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+
+        <!-- Section principale -->
+        <div class="main-content">
+            <!-- Entête -->
+            <div class="header">
+                <h1>Hiba <span style="color: #003366;">Radid</span></h1> <!-- "Hiba Radid" en bleu marine -->
+                <h2>Développeur Web</h2> <!-- "Développeur Web" en bleu ciel -->
+            </div>
+
+            <!-- Données personnelles -->
+            <div class="personal-info">
+                <h3>Données Personnelles</h3>
+                <p><span>Date de naissance :</span> 21/08/2005</p>
+                <p><span>Adresse :</span> Casablanca, Maroc</p>
+                <p><span>Téléphone :</span> +212 6 96 76 22 53</p>
+                <p><span>Email :</span> <a href="mailto:hibaradid18@gmail.com">hibaradid18@gmail.com"></</a></p>
+                <p><span>Nationalité :</span> Marocaine</p>
+            </div>
+
+            <!-- Expériences professionnelles -->
+            <div>
+                <h3>Expériences Professionnelles</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Poste</th>
+                            <th>Entreprise</th>
+                            <th>Période</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Développeur Front-End</td>
+                            <td>WebTech Solutions</td>
+                            <td>2022 - Présent</td>
+                            <td>Développement d'interfaces modernes.</td>
+                        </tr>
+                        <tr>
+                            <td>Développeur Full-Stack</td>
+                            <td>Digital Innovators</td>
+                            <td>2020 - 2021</td>
+                            <td>Création d'applications complètes.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Formation -->
+            <div class="formation-section">
+                <h3>Formation</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Diplôme</th>
+                            <th>Établissement</th>
+                            <th>Année</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">Master en Informatique</a></td>
+                            <td>Université X</td>
+                            <td>2028</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Licence en Informatique</a></td>
+                            <td>Université Y</td>
+                            <td>2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
